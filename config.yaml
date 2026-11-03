@@ -1,0 +1,24 @@
+# Strategy & risk parameters
+strategy:
+  name: "simple_momentum_v1"
+  timeframe: "1m"
+  
+  # Example entry rules (customize these)
+  min_liquidity_usd: 50000
+  max_position_size_sol: 0.1
+  take_profit_pct: 8.0
+  stop_loss_pct: 4.0
+  
+  # Self-refinement settings
+  refine_every_n_trades: 20
+  lookback_days: 7
+
+risk:
+  max_open_positions: 3
+  max_daily_loss_pct: 5.0
+  max_slippage_bps: 50
+
+execution:
+  prefer_jupiter: true          # Jupiter routes across Raydium, Orca, etc.
+  confirm_before_update: true   # Always wait for confirmation before position update
+  log_rejected_entries: true

@@ -1,0 +1,28 @@
+# Core Solana
+solders>=0.21.0
+solana>=0.34.0
+base58>=2.1.1
+
+# HTTP / async
+httpx>=0.27.0
+aiohttp>=3.9.0
+
+# Data & storage
+duckdb>=1.0.0
+pandas>=2.2.0
+numpy>=1.26.0
+pyyaml>=6.0
+
+# Backtesting & reporting
+vectorbt>=0.26.0
+quantstats>=0.0.62
+
+# Optional nice-to-haves
+python-dotenv>=1.0.0
+rich>=13.7.0          # pretty terminal output
+streamlit>=1.35.0     # optional live dashboard
+plotly>=5.22.0
+
+# For notebooks
+jupyter>=1.0.0
+matplotlib>=3.8.0
